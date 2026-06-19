@@ -16,7 +16,8 @@ st.set_page_config(
 )
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-BASE      = r"C:\Users\HP\OneDrive\Desktop\bbl-cricket-dashboard"
+# BASE      = r"C:\Users\HP\OneDrive\Desktop\bbl-cricket-dashboard"
+BASE       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROCESSED = os.path.join(BASE, "data", "processed")
 MODEL_PATH = os.path.join(BASE, "app", "model.pkl")
 
